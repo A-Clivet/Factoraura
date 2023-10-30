@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6899201256349632743}
   - component: {fileID: 5754211462517840086}
   - component: {fileID: 2439519546222919670}
+  - component: {fileID: 8533623951341522219}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -98,3 +99,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Aurora: {fileID: 0}
+--- !u!114 &8533623951341522219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798412227968858092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4650e1af3a4db4c88688dc4034689b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
