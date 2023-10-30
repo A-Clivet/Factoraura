@@ -7,7 +7,7 @@ public class CameraHandler : MonoBehaviour
     bool _isPressed;
     Vector2 _direction;
 
-    [SerializeField] float _cameraSpeed = 0.05f;
+    float _cameraSpeed = 0.08f;
 
     [SerializeField] GameObject _cameraGameObject;
 

@@ -753,6 +753,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera System
       objectReference: {fileID: 0}
+    - target: {fileID: 1776082560315434084, guid: 3eae30ea9a0dfc546bb010c1eb722431, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776082560315434084, guid: 3eae30ea9a0dfc546bb010c1eb722431, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1792417326166083139, guid: 3eae30ea9a0dfc546bb010c1eb722431, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -871,9 +879,9 @@ SceneRoots:
   - {fileID: 8800250986565561950}
   - {fileID: 3379341792204271018}
   - {fileID: 1664694035560357720}
+  - {fileID: 1679487968}
   - {fileID: 550506314}
   - {fileID: 1844891224}
   - {fileID: 1602243597}
   - {fileID: 182449342}
   - {fileID: 1922559899}
-  - {fileID: 1679487968}
