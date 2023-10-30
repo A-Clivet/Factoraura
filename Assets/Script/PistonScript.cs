@@ -47,4 +47,12 @@ public class PistonScript : MonoBehaviour
             collision.transform.position = new Vector3(collision.transform.position.x + dir_x, collision.transform.position.y + dir_y, 0);
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Aurore Spirit"))
+        {
+            collision.transform.position = new Vector3(collision.transform.position.x + dir_x, collision.transform.position.y + dir_y, 0);
+        }
+    }
 }
