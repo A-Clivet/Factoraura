@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11064776947154d46aabd567a55c33ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Aurora: {fileID: 0}
+  Aurora: {fileID: 1532781951533569729, guid: 657402048160383479973ef039e81d9a, type: 3}
 --- !u!114 &8533623951341522219
 MonoBehaviour:
   m_ObjectHideFlags: 0
