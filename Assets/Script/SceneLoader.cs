@@ -27,3 +27,4 @@ public class SceneLoading : MonoBehaviour
         Application.Quit();
     }
 }
+ 
