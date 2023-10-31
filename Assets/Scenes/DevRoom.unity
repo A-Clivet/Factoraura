@@ -355,6 +355,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 657402048160383479973ef039e81d9a, type: 3}
+--- !u!114 &792940744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8564293738910916791, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+  m_PrefabInstance: {fileID: 1679487968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1127444469 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8857654869175571417, guid: e070cdbb2931bf0479b8cf9e6a0274de, type: 3}
@@ -568,11 +579,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2846626361706023578, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 41.100006
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 2846626361706023578, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 18.100006
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3029160685175327974, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -630,6 +641,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4555098788348559115, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+      propertyPath: m_TextMeshProUGUI
+      value: 
+      objectReference: {fileID: 792940744}
     - target: {fileID: 4670630563951766266, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_SizeDelta.y
       value: -5
@@ -702,6 +717,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6583228512951712866, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+      propertyPath: m_Name
+      value: Budget
+      objectReference: {fileID: 0}
     - target: {fileID: 6781197375097345780, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_SizeDelta.x
       value: 50
@@ -738,6 +757,14 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 7464961473583538458, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 7464961473583538458, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 16.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7625657109446543555, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_Name
       value: LVL UI
@@ -745,6 +772,10 @@ PrefabInstance:
     - target: {fileID: 7625657109446543555, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7650976950277345928, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+      propertyPath: m_Name
+      value: BG
       objectReference: {fileID: 0}
     - target: {fileID: 7764359801834650733, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -765,6 +796,10 @@ PrefabInstance:
     - target: {fileID: 8498509533945070814, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -350.00006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8564293738910916791, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
+      propertyPath: m_text
+      value: "Pi\xE8ce : 100"
       objectReference: {fileID: 0}
     - target: {fileID: 8660563580709357385, guid: 42323b706d3b03744b9c69fd81dad077, type: 3}
       propertyPath: m_Actions

@@ -36,6 +36,8 @@ public class BuyMachine : MonoBehaviour
         {
             Instantiate(machine, m_pos, Quaternion.identity);
             select = false;
+            //machine.GetComponent<>
+            // faire un script a part qui recupere les valeurs de chaque machine, et recuperer ces valeur sur ce script manager
         }
     }
 }
