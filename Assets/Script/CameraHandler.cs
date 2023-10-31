@@ -7,7 +7,7 @@ public class CameraHandler : MonoBehaviour
     bool _isPressed;
     Vector2 _direction;
 
-    float _cameraSpeed = 0.08f;
+    float _cameraSpeed;
 
     [SerializeField] GameObject _cameraGameObject;
 
@@ -17,6 +17,9 @@ public class CameraHandler : MonoBehaviour
         {
             MovingCamera();
         }
+
+        _cameraSpeed = 0.02f;
+
     }
 
     public void DetectPressureOfArrowKey(bool pressed, Vector2 direction)

@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PistonScript : MonoBehaviour
 {
+    public int prize = 10;
+
     int dir_x;
     int dir_y;
+    bool col = false;
+    Transform target;
 
     private void Update()
     {
@@ -40,11 +44,17 @@ public class PistonScript : MonoBehaviour
         }
     }
 
+    void Action()
+    {
+        target.position = new Vector3(target.position.x + dir_x, target.position.y + dir_y, 0);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Aurore Spirit"))
         {
-            collision.transform.position = new Vector3(collision.transform.position.x + dir_x, collision.transform.position.y + dir_y, 0);
+            col = true;
+            target = collision.transform;
         }
     }
 
@@ -52,7 +62,8 @@ public class PistonScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Aurore Spirit"))
         {
-            collision.transform.position = new Vector3(collision.transform.position.x + dir_x, collision.transform.position.y + dir_y, 0);
+            col = true;
+            target = collision.transform;
         }
     }
 }

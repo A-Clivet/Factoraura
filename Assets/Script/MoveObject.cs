@@ -6,13 +6,19 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
     bool IsGrabed = false;
+    float pos_z;
+
+    private void Start()
+    {
+        pos_z = transform.position.z;
+    }
     public void Interact()
     {
-        IsGrabed = !IsGrabed;
+        IsGrabed = !IsGrabed; // inverse la valeur de isgrabed
 
-        if (!IsGrabed)
+        if (!IsGrabed) // quandje lâche l'object
         {
-
+            // nom de la fonction que j'appelle
         }
     }
 
@@ -20,9 +26,9 @@ public class MoveObject : MonoBehaviour
     {
         if (IsGrabed)
         {
-            // Move les Blobs
+            // Move les objets
             Vector3 m_pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            m_pos.z = 0;
+            m_pos.z = pos_z;
             transform.position = m_pos;
 
         }

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7898406140930453364}
   - component: {fileID: 1946249752272781760}
-  - component: {fileID: 237132543585889816}
   - component: {fileID: 5308421428755722910}
-  - component: {fileID: 889863655019301165}
+  - component: {fileID: 237132543585889816}
+  - component: {fileID: -5562073984532111594}
   m_Layer: 6
   m_Name: Piston
   m_TagString: Untagged
@@ -87,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &237132543585889816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2977548712455509435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc7311c8b66897049a7388821883077d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &5308421428755722910
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1, y: 0}
+  m_Offset: {x: -0.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -142,9 +130,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 1.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &889863655019301165
+--- !u!114 &237132543585889816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,6 +141,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2977548712455509435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc4650e1af3a4db4c88688dc4034689b, type: 3}
+  m_Script: {fileID: 11500000, guid: bc7311c8b66897049a7388821883077d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5562073984532111594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2977548712455509435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac14a53223708bb4f89a0965c9f0d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ConveyorBeltScript : MonoBehaviour
 {
+    public int prize = 10;
+
     int dir_x;
     int dir_y;
 
@@ -40,7 +42,7 @@ public class ConveyorBeltScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Aurore Spirit"))
         {
