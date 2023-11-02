@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PistonScript : MonoBehaviour
 {
-    public int prize = 10;
+    public int price = 10;
 
     int dir_x;
     int dir_y;

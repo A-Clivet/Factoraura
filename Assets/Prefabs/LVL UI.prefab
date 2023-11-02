@@ -178,16 +178,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2414355803913087874}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7764359801834650733}
+  m_Father: {fileID: 231499575075201861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 30.7}
+  m_AnchoredPosition: {x: -350, y: 142.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4309768987262186639
@@ -538,7 +538,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fc9c71455a41548a2f10c57b736f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machine: {fileID: 0}
+  Piston: {fileID: 2977548712455509435, guid: 16fa4dc4b58205e48a6e08a7ad28c417, type: 3}
+  ConvoyerBelt: {fileID: 8116877241218430672, guid: 181f585a89d8a9042b7f0635b9cb0721, type: 3}
+  MeltinStation: {fileID: 4319693840118517012, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}
+  machine: {fileID: 2977548712455509435, guid: 16fa4dc4b58205e48a6e08a7ad28c417, type: 3}
+  money: {fileID: 4555098788348559115}
 --- !u!1 &4010520477335786865
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +643,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4901701293634929126}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -924,7 +928,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fc9c71455a41548a2f10c57b736f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Piston: {fileID: 2977548712455509435, guid: 16fa4dc4b58205e48a6e08a7ad28c417, type: 3}
+  ConvoyerBelt: {fileID: 8116877241218430672, guid: 181f585a89d8a9042b7f0635b9cb0721, type: 3}
+  MeltinStation: {fileID: 4319693840118517012, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}
   machine: {fileID: 4319693840118517012, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}
+  money: {fileID: 4555098788348559115}
 --- !u!1 &5417076112719896721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,7 +1250,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3784632327875313167}
-  - {fileID: 6781197375097345780}
   m_Father: {fileID: 231499575075201861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1583,7 +1590,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fc9c71455a41548a2f10c57b736f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Piston: {fileID: 2977548712455509435, guid: 16fa4dc4b58205e48a6e08a7ad28c417, type: 3}
+  ConvoyerBelt: {fileID: 8116877241218430672, guid: 181f585a89d8a9042b7f0635b9cb0721, type: 3}
+  MeltinStation: {fileID: 4319693840118517012, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}
   machine: {fileID: 8116877241218430672, guid: 181f585a89d8a9042b7f0635b9cb0721, type: 3}
+  money: {fileID: 4555098788348559115}
 --- !u!114 &1047536849435885896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1734,7 +1745,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7529131450568014282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1877,6 +1888,7 @@ RectTransform:
   - {fileID: 4708525705501514533}
   - {fileID: 8498509533945070814}
   - {fileID: 7764359801834650733}
+  - {fileID: 6781197375097345780}
   - {fileID: 8825566427142435685}
   - {fileID: 3029160685175327974}
   - {fileID: 1117085989053224967}
@@ -2280,8 +2292,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8269445792132238306}
-  - {fileID: 8554201528021838077}
   - {fileID: 1330669775821868229}
+  - {fileID: 8554201528021838077}
   - {fileID: 4099830856126501354}
   m_Father: {fileID: 231499575075201861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

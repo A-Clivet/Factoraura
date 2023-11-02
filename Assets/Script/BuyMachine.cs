@@ -1,11 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class BuyMachine : MonoBehaviour
 {
+    [SerializeField] GameObject Piston;
+    [SerializeField] GameObject ConvoyerBelt;
+    [SerializeField] GameObject MeltinStation;
+
+
     [SerializeField] GameObject machine;
+    [SerializeField] Money money;
 
     Vector3 m_pos;
 
@@ -14,7 +21,7 @@ public class BuyMachine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -32,12 +39,11 @@ public class BuyMachine : MonoBehaviour
 
     public void Spawn(InputAction.CallbackContext context)
     {
-        if(context.performed && select)
+        if(context.performed && select && money.Budget - PriceManager.Instance.Cost(machine) >= 0)
         {
             Instantiate(machine, m_pos, Quaternion.identity);
             select = false;
-            //machine.GetComponent<>
-            // faire un script a part qui recupere les valeurs de chaque machine, et recuperer ces valeur sur ce script manager
-        }
+            money.Budget -= PriceManager.Instance.Cost(machine);
+        }    
     }
 }

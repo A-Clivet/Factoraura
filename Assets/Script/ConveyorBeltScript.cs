@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConveyorBeltScript : MonoBehaviour
 {
-    public int prize = 10;
+    public int price = 5;
 
     int dir_x;
     int dir_y;
