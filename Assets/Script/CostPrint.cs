@@ -15,10 +15,4 @@ public class CostPrint : MonoBehaviour
         cost = PriceManager.Instance.Cost(machine);
         m_TextMeshProUGUI.text = "Prix : " + cost;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 }
