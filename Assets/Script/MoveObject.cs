@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
+    [SerializeField] GameObject Trash;
     bool IsGrabed = false;
     float pos_z;
 
@@ -19,6 +20,7 @@ public class MoveObject : MonoBehaviour
         if (!IsGrabed) // quandje lâche l'object
         {
             // nom de la fonction que j'appelle
+            // Trash.Sale();
         }
     }
 
@@ -33,5 +35,4 @@ public class MoveObject : MonoBehaviour
 
         }
     }
-
 }
