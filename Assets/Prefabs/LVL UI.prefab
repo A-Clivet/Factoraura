@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2979c5b04c65c314dac53b70dbd104d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machine: {fileID: 0}
+  machine: {fileID: -5562073984532111594, guid: 16fa4dc4b58205e48a6e08a7ad28c417, type: 3}
   m_TextMeshProUGUI: {fileID: 375748994926323994}
 --- !u!1 &4901701293634929126
 GameObject:
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2979c5b04c65c314dac53b70dbd104d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machine: {fileID: 0}
+  machine: {fileID: 5164312590683655951, guid: 181f585a89d8a9042b7f0635b9cb0721, type: 3}
   m_TextMeshProUGUI: {fileID: 4356706563946210220}
 --- !u!1 &5207819830471905267
 GameObject:
@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2979c5b04c65c314dac53b70dbd104d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machine: {fileID: 0}
+  machine: {fileID: -3873908667240505526, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}
   m_TextMeshProUGUI: {fileID: 8129116544718855307}
 --- !u!1 &5951877977180471743
 GameObject:
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &5615857707079619499
 MonoBehaviour:
   m_ObjectHideFlags: 0

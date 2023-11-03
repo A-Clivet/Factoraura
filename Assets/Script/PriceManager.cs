@@ -33,7 +33,7 @@ public class PriceManager : MonoBehaviour
         }
         if (machine.nametype == "meltin station")
         {
-            prize = MeltinMachine.GetComponent<MeltinStation>().price;
+            prize = MeltinMachine.GetComponentInChildren<MeltinStation>().price;
             return prize;
         }
 
