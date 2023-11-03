@@ -14,6 +14,7 @@ public class PistonScript : MonoBehaviour
     private void Update()
     {
         Rotation();
+        Action();
     }
 
     private void Rotation()
@@ -46,19 +47,16 @@ public class PistonScript : MonoBehaviour
 
     void Action()
     {
-        target.position = new Vector3(target.position.x + dir_x, target.position.y + dir_y, 0);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Aurore Spirit"))
+        if (col)
         {
-            col = true;
-            target = collision.transform;
+            target.GetComponent<WayToGo>()._x = dir_x;
+            target.GetComponent<WayToGo>()._y = dir_y;
+            col = false;
+            target = null;
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Aurore Spirit"))
         {

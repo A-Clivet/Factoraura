@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ConveyorBeltScript : MonoBehaviour
 {
+    WayToGo WayToGo;
     public int price = 5;
 
     int dir_x;
@@ -46,7 +47,8 @@ public class ConveyorBeltScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Aurore Spirit"))
         {
-            collision.transform.position = new Vector3(collision.transform.position.x + dir_x, collision.transform.position.y + dir_y, 0);
+            collision.GetComponent<WayToGo>()._x = dir_x;
+            collision.GetComponent<WayToGo>()._y = dir_y;
         }
     }
 }
