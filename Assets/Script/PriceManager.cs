@@ -31,7 +31,7 @@ public class PriceManager : MonoBehaviour
             prize = ConvoyerBelt.GetComponent<ConveyorBeltScript>().price;
             return prize;
         }
-        if(machine.nametype == "meltin station")
+        if (machine.nametype == "meltin station")
         {
             prize = MeltinMachine.GetComponent<MeltinStation>().price;
             return prize;
