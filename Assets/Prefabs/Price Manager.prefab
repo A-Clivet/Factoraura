@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Piston: {fileID: 2977548712455509435, guid: 16fa4dc4b58205e48a6e08a7ad28c417, type: 3}
   ConvoyerBelt: {fileID: 8116877241218430672, guid: 181f585a89d8a9042b7f0635b9cb0721, type: 3}
-  MeltinStation: {fileID: 4319693840118517012, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}
+  MeltinMachine: {fileID: 4319693840118517012, guid: d3536b3c8bac9dc4399bd39b02da9598, type: 3}

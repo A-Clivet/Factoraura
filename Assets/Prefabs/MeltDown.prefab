@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 352153496768694837}
   - component: {fileID: 8753457375250753265}
   - component: {fileID: 679953367598917034}
+  - component: {fileID: 429794830010535076}
   - component: {fileID: 3362504447679150766}
   m_Layer: 6
   m_Name: GameObject
@@ -190,6 +191,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &429794830010535076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4345710531487071863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5999986f078c1f245952eef730c86df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  price: 20
 --- !u!114 &3362504447679150766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,4 +216,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac14a53223708bb4f89a0965c9f0d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nametype: 
+  nametype: meltin station
