@@ -7,7 +7,7 @@ public class MoveObject : MonoBehaviour
 {
     bool IsGrabed = false;
     float pos_z;
-
+    public string nametype;
     private void Start()
     {
         pos_z = transform.position.z;

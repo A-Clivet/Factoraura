@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class Trash : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] Money money;
-    [NonSerialized] public GameObject doSale;
+    [NonSerialized] public MoveObject doSale;
     public static Trash Instance;
 
     bool canSale = false;
@@ -36,8 +36,7 @@ public class Trash : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (canSale)
         {
             money.Budget += PriceManager.Instance.Cost(doSale);
-            Debug.Log("vente");
-            Destroy(doSale);
+            Destroy(doSale.gameObject);
         }
     }
 }

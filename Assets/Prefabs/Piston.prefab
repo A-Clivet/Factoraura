@@ -157,4 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac14a53223708bb4f89a0965c9f0d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Trash: {fileID: 0}
+  nametype: piston

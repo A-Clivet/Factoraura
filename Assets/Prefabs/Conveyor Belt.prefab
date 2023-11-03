@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4236470eeb7d05045a563bf612861ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prize: 10
+  price: 5
 --- !u!114 &5164312590683655951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,3 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac14a53223708bb4f89a0965c9f0d890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nametype: conveyor belt

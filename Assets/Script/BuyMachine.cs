@@ -11,18 +11,12 @@ public class BuyMachine : MonoBehaviour
     [SerializeField] GameObject MeltinStation;
 
 
-    [SerializeField] GameObject machine;
+    [SerializeField] MoveObject machine;
     [SerializeField] Money money;
 
     Vector3 m_pos;
 
     bool select = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -41,8 +35,9 @@ public class BuyMachine : MonoBehaviour
     {
         if(context.performed && select && money.Budget - PriceManager.Instance.Cost(machine) >= 0)
         {
-            Instantiate(machine, m_pos, Quaternion.identity);
+            Instantiate(machine.gameObject, m_pos, Quaternion.identity).SetActive(true);
             select = false;
+
             money.Budget -= PriceManager.Instance.Cost(machine);
         }    
     }

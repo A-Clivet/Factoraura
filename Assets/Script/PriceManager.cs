@@ -7,7 +7,7 @@ public class PriceManager : MonoBehaviour
 {
     [SerializeField] GameObject Piston;
     [SerializeField] GameObject ConvoyerBelt;
-    [SerializeField] GameObject MeltinStation;
+    [SerializeField] GameObject MeltinMachine;
     public static PriceManager Instance;
     
     [NonSerialized] public int prize = 0;
@@ -18,15 +18,15 @@ public class PriceManager : MonoBehaviour
             Instance = this;
         else Destroy(gameObject);
     }
-    public int Cost(GameObject machine)
+    public int Cost(MoveObject machine)
     {
-        if(machine == Piston)
+        if(machine.nametype == "piston")
         {
             prize = Piston.GetComponent<PistonScript>().price;
 
             return prize;
         }
-        if(machine == ConvoyerBelt)
+        if(machine.nametype == "conveyor belt")
         {
             prize = ConvoyerBelt.GetComponent<ConveyorBeltScript>().price;
             return prize;

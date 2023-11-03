@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CostPrint : MonoBehaviour
 {
-    [SerializeField] GameObject machine;
+    [SerializeField] MoveObject machine;
     [SerializeField] TextMeshProUGUI m_TextMeshProUGUI;
     int cost = 0;
 
