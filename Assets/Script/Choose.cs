@@ -13,6 +13,7 @@ public class Choose : MonoBehaviour
             var Hit = Physics2D.GetRayIntersection(Camera.main.ScreenPointToRay(Input.mousePosition), 5000, LayerMask.GetMask("grabbable"));
             if (Hit)
             {
+                Trash.Instance.doSale = Hit.transform.gameObject;
                 Hit.collider.GetComponent<MoveObject>().Interact();
             }
         }
