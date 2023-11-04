@@ -46,12 +46,10 @@ public class WayToGo : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Void"))
         {
-            Debug.Log("void");
             Destroy(gameObject);
         }
         if(collision.gameObject.CompareTag("Aurore Spirit"))
         {
-            Debug.Log("Aurore Spirit");
             Destroy(gameObject);
         }
     }

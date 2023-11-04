@@ -5,16 +5,54 @@ using UnityEngine;
 public class MeltinStation : MonoBehaviour
 {
     public int price = 20;
+    int onWait = 0;
+    GameObject target1;
+    GameObject target2;
 
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(onWait);
+
+        if (onWait == 2)
+        {
+            MeltDown();
+        }
     }
 
     void MeltDown()
     {
-
+        Debug.Log("fusion");
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Aurore Spirit"))
+        {
+            if (target1 == null)
+            {
+                target1 = collision.gameObject;
+            }
+            else if (target1 != null)
+            {
+                target2 = collision.gameObject;
+            }
+            onWait += 1;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Aurore Spirit"))
+        {
+            if (target2 != null)
+            {
+                target2 = null;
+            }
+            else if (target1 != null)
+            {
+                target1 = null;
+            }
+            onWait -= 1;
+        }
     }
 }
