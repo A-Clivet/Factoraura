@@ -52,5 +52,9 @@ public class WayToGo : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if(collision.gameObject.CompareTag("Aurore Stone"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

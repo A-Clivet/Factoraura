@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MeltinStation : MonoBehaviour
 {
+    [SerializeField] GameObject m_AuroreStone;
     public int price = 20;
     int onWait = 0;
     GameObject target1;
@@ -23,6 +24,9 @@ public class MeltinStation : MonoBehaviour
     void MeltDown()
     {
         // Instantier le nouvel objet puis détruire target 1 et target 2
+        Instantiate(m_AuroreStone, new Vector3(transform.position.x, transform.position.y, 0f), transform.rotation);
+        Destroy(target2);
+        Destroy(target1);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
