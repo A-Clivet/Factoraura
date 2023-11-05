@@ -13,7 +13,6 @@ public class MeltinStation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(onWait);
 
         if (onWait == 2)
         {
@@ -23,7 +22,7 @@ public class MeltinStation : MonoBehaviour
 
     void MeltDown()
     {
-        Debug.Log("fusion");
+        // Instantier le nouvel objet puis détruire target 1 et target 2
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
